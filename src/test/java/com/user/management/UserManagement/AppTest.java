@@ -1,4 +1,4 @@
-package Sample1.Sample2;
+package com.user.management.UserManagement;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

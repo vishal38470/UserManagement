@@ -1,4 +1,4 @@
-package Sample1.Sample2;
+package com.user.management;
 
 /**
  * Hello world!
