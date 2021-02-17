@@ -33,7 +33,7 @@ boolean isActive=true;
 	}
 
 	public User(int userID,String name, int age, String address) {
-		super();
+		
 		this.userID = userID;
 		this.name = name;
 		this.age = age;
