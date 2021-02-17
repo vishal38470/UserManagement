@@ -32,7 +32,7 @@ boolean isActive=true;
 		return isActive;
 	}
 
-	public User(int userID,String name, int age, String address) {
+	public User(int userID, String name, int age, String address) {
 		
 		this.userID = userID;
 		this.name = name;
