@@ -13,32 +13,32 @@ public class UserService {
     public int insertUser(String name, int age, String address) {
 
 
-        int ID = counter;
+        int id = counter;
         counter++;
 
-        users.put(ID, new User(ID, name, age, address));
+        users.put(id, new User(id, name, age, address));
 
-        return ID;
+        return id;
 
     }
 
     ///////remove////////////////
-    public void deleteUser(int ID) {
-        users.remove(ID);
+    public void deleteUser(int id) {
+        users.remove(id);
 
     }
 
     ///////////////////getuser/////////////////
-    public User getUser(int ID) {
+    public User getUser(int id) {
 
-        return users.get(ID);
+        return users.get(id);
 
     }
 
     //////update/////////////////
-    public void updateUser(int ID, String name, int age, String address) {
+    public void updateUser(int id, String name, int age, String address) {
 
-        User user = this.getUser(ID);
+        User user = this.getUser(id);
         user.setName(name);
         user.setAge(age);
         user.setAddress(address);

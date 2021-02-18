@@ -2,72 +2,59 @@ package com.user.management.model;
 
 public class User {
 
-	int userID;
-	
-	String name;
-	
-	int age;
-	
-	String address;
-boolean isActive=true;
-	public int getUserID() {
-		return userID;
-	}
+    int userId;
+    String name;
+    int age;
+    String address;
+    boolean isActive = true;
 
-	public String getName() {
-		return name;
-	}
+    public int getUserID() {
+        return userId;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public int getAge() {
+        return age;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public boolean isActive() {
+        return isActive; }
+
+    public User(int id, String name, int age, String address) {
+        this.userId = id;
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setActive(boolean isActive) {
+        this.isActive = isActive;
+    }
+
+    @Override
+    public String toString() {
+        return "User [userID=" + userId + ", name=" + name + ", age=" + age + ", address=" + address + ", isActive="
+                + isActive + "]";
+    }
 
 
-	public boolean isActive() {
-		
-		return isActive;
-	}
-
-	public User(int ID,String name, int age, String address) {
-		
-		this.userID = ID;
-		this.name = name;
-		this.age = age;
-		this.address = address;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public void setActive(boolean isActive) {
-		this.isActive = isActive;
-	}
-
-	@Override
-	public String toString() {
-		return "User [userID=" + userID + ", name=" + name + ", age=" + age + ", address=" + address + ", isActive="
-				+ isActive + "]";
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
