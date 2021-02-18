@@ -7,17 +7,13 @@ import com.user.management.model.User;
 
 public class UserService {
     static Map<Integer, User> users = new HashMap<Integer, User>();
- int counter =1;
-
-
-
-
+    int counter = 1;
 
     ////////////////insert////////////////
     public int insertUser(String name, int age, String address) {
 
 
-        int ID = counter ;
+        int ID = counter;
         counter++;
 
         users.put(ID, new User(ID, name, age, address));
@@ -37,9 +33,6 @@ public class UserService {
 
         return users.get(ID);
 
-
-
-
     }
 
     //////update/////////////////
@@ -49,7 +42,6 @@ public class UserService {
         user.setName(name);
         user.setAge(age);
         user.setAddress(address);
-
     }
 
     public Map<Integer, User> getAllUsers() {
