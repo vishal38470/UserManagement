@@ -32,9 +32,9 @@ boolean isActive=true;
 		return isActive;
 	}
 
-	public User(int userID,String name, int age, String address) {
+	public User(int ID,String name, int age, String address) {
 		
-		this.userID = userID;
+		this.userID = ID;
 		this.name = name;
 		this.age = age;
 		this.address = address;
@@ -60,8 +60,6 @@ boolean isActive=true;
 	public String toString() {
 		return "User [userID=" + userID + ", name=" + name + ", age=" + age + ", address=" + address + ", isActive="
 				+ isActive + "]";
-		
-		
 	}
 	
 	
